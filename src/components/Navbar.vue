@@ -6,15 +6,16 @@
     </div>
 
     <div class="links">
-      <a href="#">Home</a>
-      <a href="#">Courses</a>
-      <a href="#">About</a>
+      <router-link :to="{ name: 'home' }">Home</router-link>
+      <router-link :to="{ name: 'courses' }">Courses</router-link>
+      <router-link :to="{ name: 'about' }">About</router-link>
+      
 
       <!-- <button @click="toggleTheme" class="theme-btn">
         {{ isDark ? '🌙' : '☀️' }}
       </button> -->
 
-      <a href="#">Login</a>
+     <router-link :to="{ name: 'login' }">Login</router-link>
       <a class="signup"><span class="sign_span">Sign Up</span></a>
 
       <select v-model="currentLang" class="lang-picker">
@@ -33,28 +34,29 @@
           <span class="logo-text">Menu</span>
           <button class="close-btn" @click="toggleMenu">✕</button>
         </div>
-
         <div class="mobile-links">
-          <a href="#" @click="toggleMenu">Home</a>
-          <a href="#" @click="toggleMenu">Courses</a>
-          <a href="#" @click="toggleMenu">About</a>
-          <a href="#" @click="toggleMenu">Login</a>
+          <router-link to="/" @click="toggleMenu">Home</router-link>
+          <router-link to="/courses" @click="toggleMenu">Courses</router-link>
+          <router-link to="/about" @click="toggleMenu">About</router-link>
+          <router-link to="/login" @click="toggleMenu">Login</router-link>
 
           <hr class="divider" />
 
           <div class="mobile-controls">
-            <label>Language:</label>
-            <select v-model="currentLang">
+            <label for="mobile-lang">Language:</label>
+            <select
+              id="mobile-lang"
+              v-model="currentLang"
+              @change="updateLanguage"
+            >
               <option value="en">English</option>
-              <option value="ar">Arabic</option>
+              <option value="ar">العربية</option>
             </select>
-
-            <!-- <button @click="toggleTheme" class="mobile-theme-toggle">
-              {{ isDark ? '🌙 Dark Mode' : '☀️ Light Mode' }}
-            </button> -->
           </div>
 
-          <a class="signup-mobile">Sign Up</a>
+          <router-link to="/signup" class="signup-mobile" @click="toggleMenu"
+            >Sign Up</router-link
+          >
         </div>
       </div>
       <div class="backdrop" @click="toggleMenu"></div>

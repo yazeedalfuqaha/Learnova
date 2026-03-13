@@ -11,7 +11,9 @@
 
         <div class="buttons">
           <button class="primary">Start Learning</button>
-          <button class="secondary">Browse Courses</button>
+          <button class="secondary" @click="$router.push('/courses')">
+            Browse Courses
+          </button>
         </div>
       </div>
 
@@ -56,7 +58,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-    <Footer/>
+      <Footer />
     </footer>
   </div>
 </template>
@@ -73,7 +75,7 @@ export default {
   components: {
     Testimonial,
     Partners,
-    Footer
+    Footer,
   },
 };
 </script>
