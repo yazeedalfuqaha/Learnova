@@ -9,13 +9,8 @@
       <router-link :to="{ name: 'home' }">Home</router-link>
       <router-link :to="{ name: 'courses' }">Courses</router-link>
       <router-link :to="{ name: 'about' }">About</router-link>
-      
 
-      <!-- <button @click="toggleTheme" class="theme-btn">
-        {{ isDark ? '🌙' : '☀️' }}
-      </button> -->
-
-     <router-link :to="{ name: 'login' }">Login</router-link>
+      <router-link :to="{ name: 'login' }">Login</router-link>
       <a class="signup"><span class="sign_span">Sign Up</span></a>
 
       <select v-model="currentLang" class="lang-picker">
@@ -64,7 +59,7 @@
   </transition>
 </template>
 <script setup>
-import { ref, watchEffect } from "vue";
+import { ref } from "vue";
 
 const mobileMenu = ref(false);
 const isDark = ref(false);
@@ -73,16 +68,6 @@ const currentLang = ref("en");
 const toggleMenu = () => {
   mobileMenu.value = !mobileMenu.value;
 };
-
-// const toggleTheme = () => {
-//   isDark.value = !isDark.value
-//   // Apply class to root for CSS variables to pick up
-//   if (isDark.value) {
-//     document.documentElement.classList.add('dark')
-//   } else {
-//     document.documentElement.classList.remove('dark')
-//   }
-// }
 </script>
 
 <style>

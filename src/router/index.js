@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import CoursesView from '../views/CoursesView.vue'
 import AboutPage from '@/views/AboutPage.vue'
 import LoginPage from '@/views/LoginPage.vue'
+import SignupPage from '@/views/SignupPage.vue'
 
 const routes = [
   {
@@ -12,22 +13,28 @@ const routes = [
   },
   {
     path: '/courses',
-    name : 'courses',
-    component : CoursesView
+    name: 'courses',
+    component: CoursesView
   },
 
   {
-    path : '/about',
-    name : 'about',
-    component : AboutPage
+    path: '/about',
+    name: 'about',
+    component: AboutPage
   },
 
-    {
-    path : '/login',
-    name : 'login',
-    component : LoginPage
-  }
-  
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginPage
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: SignupPage
+  },
+
+
 ]
 
 const router = createRouter({
