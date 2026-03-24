@@ -18,7 +18,7 @@
           <p>Learn HTML, CSS, JavaScript and build real projects.</p>
           <div class="course-footer">
             <span class="price">$49</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
           <p>Design beautiful websites and apps with Figma and Adobe XD.</p>
           <div class="course-footer">
             <span class="price">$39</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@
           <p>Master Python for web, data science, and automation.</p>
           <div class="course-footer">
             <span class="price">$59</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <p>Learn React JS from scratch and build modern web apps.</p>
           <div class="course-footer">
             <span class="price">$45</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
           <p>Build scalable backend applications with Node.js and Express.</p>
           <div class="course-footer">
             <span class="price">$50</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
           <p>Learn data analysis, visualization, and machine learning in Python.</p>
           <div class="course-footer">
             <span class="price">$60</span>
-            <button class="btn">Enroll</button>
+            <button class="btn">Add To Cart</button>
           </div>
         </div>
       </div>
